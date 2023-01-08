@@ -1,5 +1,6 @@
 using CasaKitchen.Application;
 using CasaKitchen.Infrastructure;
+using CasaKitchen.Api.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 {
@@ -12,6 +13,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 {
+    app.UseExceptionHandler("/error");
+
     app.UseHttpsRedirection();
     app.MapControllers();
     app.Run();

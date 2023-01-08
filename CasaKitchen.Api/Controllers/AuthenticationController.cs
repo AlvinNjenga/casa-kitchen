@@ -1,4 +1,5 @@
 
+using CasaKitchen.Api.Filters;
 using CasaKitchen.Application.Services.Interfaces;
 using CasaKitchen.Contracts.Authentication;
 using Microsoft.AspNetCore.Mvc;
